@@ -1,40 +1,70 @@
 <template>
-  <div class="services">
-    <h1>OUR SERVICES INCLUDE:</h1>
-    <div class="servicelist">
-      <div>
-      <RouterLink class="servicelinks" to="/">- CLOUD SERVICES</RouterLink>
-      </div>
-      <div>
-        <RouterLink class="servicelinks" to="/about">- PAIN MANAGEMENT SOFTWARE</RouterLink>
-      </div>
-      <div>
-        <RouterLink class="servicelinks" to="/contact">- BACK OFFICE SERVICES</RouterLink>
-      </div>
-      <h3>- INSURANCE VERIFICATION</h3>
-      <h3>- MEDICAL BILLING</h3>
-      <h3>- SOFTWARE DEVELOPMENT</h3>
+    <div class="menu-item" @click="isOpen = !isOpen" >
+        <a href ='#'>
+            {{ title }}
+        </a>
+        <svg id="arrow" viewBox="0 0 1030 638" width="100">
+            <path d="M1017 68L541 626q-11 12-26 12t-26-12L13 68Q-3 49 6 24.5T39 0h952q24 0 33 24.5t-7 43.5z" fill="#FFF"></path>
+        </svg>
+        <transition name="fade" apear>
+         <div class="sub-menu" v-if="isOpen">
+            <div class="menu-item">
+              <router-link to="/about/Overview">Overview</router-link>
+            </div>
+            <div class="menu-item">
+              <router-link to="/about/BO">Back Office</router-link>
+            </div>
+            <div class="menu-item">
+              <router-link to="/about/PT">PainTrax</router-link>
+            </div>
+        </div>
+        </transition>
     </div>
-  </div>
 </template>
 
-<style scoped>
-.servicelist{
-  font-size: var(--h3);
-  font-weight: normal;
-  margin-left: 5rem;
-  margin-top: 2rem;
+<script>
+export default {
+  name: 'services',
+  props: ['title'],
+  data () {
+    return {
+      isOpen: false,
+      }
+    }
 }
-h1{
-  margin: 1rem;
-  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+</script>
+<style>
+.menu-item{
+  margin-left: 20%;
+  width: 100%;
+  display: inline;
 }
-.servicelinks{
-  color: var(--moss-green);
+nav .menu-item svg {
+    width: 10px;
+    margin-left: 5px;
+    margin-right: 20%;
 }
-@media (hover: hover) {
-  a:hover {
-    background-color: var(--grey);
-  }
+nav .menu-item .sub-menu {
+  z-index: 999;
+  position: absolute;
+  background-color: var(--dark-brown);
+  top: calc(100% + 5px);
+  left: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 7rem;
+  border-radius: 0px 0px 16px 16px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .5s ease-out;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.sub-menu {
+  cursor: pointer;
 }
 </style>

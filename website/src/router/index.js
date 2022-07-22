@@ -21,7 +21,22 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
-    }
+    },
+    {
+      path: '/about/Overview',
+      name: 'Overview',
+      component: () => import('../views/Dropdown/Overview.vue')
+    },
+    {
+      path: '/about/BO',
+      name: 'BO',
+      component: () => import('../views/Dropdown/BOServices.vue')
+    },
+    {
+      path: '/about/PT',
+      name: 'PT',
+      component: () => import('../views/Dropdown/Paintrax.vue')
+    },
   ]
 })
 

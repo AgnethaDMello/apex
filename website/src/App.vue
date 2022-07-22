@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 </script>
 
 <template>
@@ -17,22 +17,22 @@
 
   <RouterView/>
 
+</template> -->
+
+<template>
+  <div id="app">
+      <Navbar />
+    <RouterView/>
+  </div>
 </template>
 
-<style scoped>
-.wrapper{
-  display: flex;
-  padding: 1rem;
-  background-color: var(--dark-brown);
-  width: 100%;
+<script>
+import Navbar from './views/Navbar.vue'
+export default {
+  name: 'App',
+  components: {
+    Navbar
+  }
 }
-#logo{
-  justify-content: center;
-  width: 10%;
-  margin-right: 10%;
-}
-nav{
-  width: 100%;
-  margin-top: 0.8%;
-}
-</style>
+</script>
+
