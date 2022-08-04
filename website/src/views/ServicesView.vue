@@ -15,7 +15,7 @@
               <router-link to="/about/BO">Back Office</router-link>
             </div>
             <div class="menu-item">
-              <router-link to="/about/PT">PainTrax</router-link>
+              <router-link to="/about/AEI">AEI Services</router-link>
             </div>
         </div>
         </transition>

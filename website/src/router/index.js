@@ -33,9 +33,9 @@ const router = createRouter({
       component: () => import('../views/Dropdown/BOServices.vue')
     },
     {
-      path: '/about/PT',
-      name: 'PT',
-      component: () => import('../views/Dropdown/Paintrax.vue')
+      path: '/about/AEI',
+      name: 'AEI',
+      component: () => import('../views/Dropdown/AEIServices.vue')
     },
   ]
 })
