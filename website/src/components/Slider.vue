@@ -63,6 +63,7 @@ export default {
   transition: all 0.9s ease;
   overflow: hidden;
   visibility: visible;
+  position: absolute;
   width:100%;
   opacity: 1;
 }
