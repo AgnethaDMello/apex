@@ -3,17 +3,12 @@
     <h1>OUR SERVICES INCLUDE:</h1>
     <div class="servicelist">
       <div>
-      <RouterLink class="servicelinks" to="/">- CLOUD SERVICES</RouterLink>
+        <RouterLink class="servicelinks" to="/about/AEI">- APEX ENTERPRISES INTERNATIONAL (AEI) SYSTEMS</RouterLink>
       </div>
       <div>
-        <RouterLink class="servicelinks" to="/services">- PAIN MANAGEMENT SOFTWARE</RouterLink>
+        <RouterLink class="servicelinks" to="/about/BO">- BACK OFFICE SERVICES</RouterLink>
       </div>
-      <div>
-        <RouterLink class="servicelinks" to="/contact">- BACK OFFICE SERVICES</RouterLink>
-      </div>
-      <h3>- INSURANCE VERIFICATION</h3>
       <h3>- MEDICAL BILLING</h3>
-      <h3>- SOFTWARE DEVELOPMENT</h3>
     </div>
   </div>
 </template>

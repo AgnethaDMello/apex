@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition-group name="fade" tag="div">
-      <div v-for="i in [currentIndex]" :key="i">
+      <div>
         <img :src="currentImg" />
       </div>
     </transition-group>
@@ -9,6 +9,7 @@
     <a class="next" @click="next" href="#">&#10095; </a>
   </div>
 </template>
+
 <script>
 import Globe from "../images/globe.jpg";
 import Soil from "../images/soil.jpg";
@@ -57,6 +58,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
@@ -77,7 +79,7 @@ export default {
 
 img {
   height:600px;
-  width:100%
+  width:100%;
 }
 
 .prev, .next {
