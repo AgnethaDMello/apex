@@ -4,7 +4,7 @@
     <div id="AEIexp">
         <div class="AEIcards">
     <img class="AEIimgs" src="https://www.infomazeelite.com/wp-content/uploads/2021/09/Virtual-Assistant-BAck-Office-Services.png" alt="Woman on a Computer Screen talking to Confused Man">
-    <p id="AEItext1" class="AEItext">This is where AEI systems step in to seamlessly transition a medical
+    <p id="AEItext1" class="AEItext">AEI systems step in to seamlessly transition a medical
 Office’s in-house documentation/operational functions to a virtual
 medical back-office.</p>
 </div>

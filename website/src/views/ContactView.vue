@@ -12,7 +12,7 @@ They will provide you with all relevant details.</h3>
   <h3 class="brownh3">New York</h3>
 <h3 class="brownh3">New Jersey</h3>
 </div>
-<h3 class="blackh3">Phone - (347)-983-8550</h3>
+<h3 class="blackh3">Phone - (347)-947-5275</h3>
 <h3 class="blackh3">Email - sales@apexentintl.com</h3>
   </div>
 </template>
