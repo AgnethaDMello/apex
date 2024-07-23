@@ -38,6 +38,8 @@ any business model.</p>
 <style scoped>
 h1{
     text-align: center;
+    background: var(--light-blue);
+    border-radius: 1rem;
 }
 h2{
     color: var(--moss-green);

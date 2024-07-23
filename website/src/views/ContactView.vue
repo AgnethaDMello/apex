@@ -20,6 +20,8 @@ They will provide you with all relevant details.</h3>
 <style scoped>
 h1{
   text-align: center;
+  background: var(--light-blue);
+  border-radius: 1rem;
 }
 h2{
   text-align: center;

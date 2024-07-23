@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition-group name="fade" tag="div">
-      <div>
+      <div id="gallery">
         <img :src="currentImg" />
       </div>
     </transition-group>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Globe from "../images/globe.jpg";
+import Globe from "../images/globe.png";
 import Soil from "../images/soil.jpg";
 import TechPeople from "../images/techpeople.jpg";
 import GlobeEye from "../images/globeeye.jpg";
@@ -79,7 +79,11 @@ export default {
 
 img {
   height:600px;
-  width:100%;
+  width:85%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prev, .next {
@@ -107,4 +111,9 @@ img {
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.9);
-}</style>
+}
+
+#gallery{
+  background: var(--light-blue);
+}
+</style>
